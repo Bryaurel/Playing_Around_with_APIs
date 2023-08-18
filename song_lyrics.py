@@ -2,7 +2,13 @@
 import requests
 
 def get_song_lyrics(song_title):
-    url = "https://genius-song-lyrics1.p.rapidapi.com/song/lyrics/"
+    urls = [
+        "https://genius-song-lyrics1.p.rapidapi.com/song/lyrics/",
+        "https://genius-song-lyrics1.p.rapidapi.com/search/",
+        "https://genius-song-lyrics1.p.rapidapi.com/artist/details/",
+        "https://genius-song-lyrics1.p.rapidapi.com/artist/songs/",
+        "https://genius-song-lyrics1.p.rapidapi.com/song/details/",
+]
     
     querystring = {"q": song_title, "per_page": "1", "page": "1"}
     
@@ -10,8 +16,8 @@ def get_song_lyrics(song_title):
         "X-RapidAPI-Key": "5d70b22ceemshd6f5559bbad3234p1be2e0jsn556e0e486a85",
         "X-RapidAPI-Host": "genius-song-lyrics1.p.rapidapi.com"
     }
-    
-    response = requests.get(url, headers=headers, params=querystring)
+    for url in urls:
+        response = requests.get(url, headers=headers, params=querystring)
     
     if response.status_code == 200:
         data = response.json()
