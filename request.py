@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import request
+import requests
 
 url = "https://genius-song-lyrics1.p.rapidapi.com/search/"
 
