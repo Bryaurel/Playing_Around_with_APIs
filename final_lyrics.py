@@ -41,7 +41,7 @@ if __name__ == "__main__":
     song_title = input("Enter a song title : ")
     song_data = get_song_lyrics(song_title)
     
-    if song_title = Despacito
+    if song_title == "Despacito"
        print("Ay (Fonsi, DY)
 (Oh, oh) oh, no, oh no (oh)
 Hey, yeah, diri-diri-diriridi, Daddy, go!
