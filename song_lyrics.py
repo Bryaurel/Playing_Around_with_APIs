@@ -2,7 +2,7 @@
 import requests
 
 def get_song_lyrics(song_title):
-    url = "https://genius-song-lyrics1.p.rapidapi.com/search/"
+    url = "https://genius-song-lyrics1.p.rapidapi.com/song/lyrics/"
     
     querystring = {"q": song_title, "per_page": "1", "page": "1"}
     
