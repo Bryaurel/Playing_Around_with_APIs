@@ -27,7 +27,7 @@ def get_song_lyrics(song_title):
                 
                 # Si vous souhaitez obtenir les paroles, vous pouvez faire une requête supplémentaire
                 if 'lyrics_path' in song_data:
-                    lyrics_url = f"https://genius-song-lyrics1.p.rapidapi.com{song_data['lyrics_path']}"
+                    lyrics_url = "https://genius-song-lyrics1.p.rapidapi.com" + song_data['lyrics_path']
                     lyrics_response = requests.get(lyrics_url, headers=headers)
                     lyrics_data = lyrics_response.json()
                     song_data['lyrics'] = lyrics_data['response']['lyrics']
