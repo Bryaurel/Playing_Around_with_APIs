@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import requests
 
 def get_song_lyrics(song_title):
