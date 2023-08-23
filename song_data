@@ -13,7 +13,7 @@ def get_song_lyrics(song_title):
     querystring = {"q": song_title, "per_page": "1", "page": "1"}
     
     headers = {
-        "X-RapidAPI-Key": "VOTRE_CLE_API_RAPIDAPI",
+        "X-RapidAPI-Key": "5d70b22ceemshd6f5559bbad3234p1be2e0jsn556e0e486a85",
         "X-RapidAPI-Host": "genius-song-lyrics1.p.rapidapi.com"
     }
     
