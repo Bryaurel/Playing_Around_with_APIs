@@ -5,7 +5,7 @@ import requests
 def search_song_by_title(song_title):
     url = "https://genius-song-lyrics1.p.rapidapi.com/search/"
     
-    querystring = {"q": song_title, "per_page": "1", "page": "1"}
+    querystring = {"id":"2396871"}
     
     headers = {
         "X-RapidAPI-Key": "VOTRE_CLE_API_RAPIDAPI",
